@@ -1,0 +1,95 @@
+.surpriseMe {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.surpriseMe ul {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.surpriseMe li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  gap: 1.75em;
+  align-items: start;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.surpriseMe ul li::before {
+  content: attr(data-icon);
+  /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+  font-size: 1em;
+}
+
+.surpriseMeBtn {
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  height: 3rem;
+  width: 20rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  background-color: #fac213;
+}
+
+.surpriseMeBtn:hover {
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
