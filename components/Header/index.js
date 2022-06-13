@@ -16,13 +16,13 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <NextLink href="#">Home</NextLink>
+            <NextLink href="/">Home</NextLink>
           </li>
           <li>
-            <NextLink href="#">Categories</NextLink>
+            <NextLink href="/category">Categories</NextLink>
           </li>
           <li>
-            <NextLink href="#">About</NextLink>
+            <NextLink href="/about">About</NextLink>
           </li>
         </ul>
       </nav>
