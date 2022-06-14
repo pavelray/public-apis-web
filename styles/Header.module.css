@@ -11,11 +11,8 @@
   box-shadow: 0 0 0.15rem 0 rgb(143, 141, 141);
 }
 
-.header * {
-  display: inline;
-}
-
 .header li {
+  display: inline;
   margin: 2rem;
   font-weight: 700;
   letter-spacing: 0.13rem;
@@ -31,5 +28,14 @@
 }
 
 .logo {
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo span {
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
 }

@@ -5,14 +5,17 @@ import styles from '../../styles/Header.module.css';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <NextImage
-          src="https://codetheweb.blog/assets/img/icon2.png"
-          width={80}
-          height={80}
-        />
-      </div>
-
+      <NextLink href="/">
+        <div className={styles.logo}>
+          <span>Free</span>
+          <NextImage
+            src="/logo.png"
+            width={60}
+            height={60}
+          />
+          <span>Web</span>
+        </div>
+      </NextLink>
       <nav>
         <ul>
           <li>
