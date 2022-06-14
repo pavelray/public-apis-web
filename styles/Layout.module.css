@@ -1,3 +1,26 @@
 .container {
   margin-top: 80px;
 }
+.banner {
+  margin-top: 80px;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #df7861;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.banner a {
+  margin-left: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .banner a {
+    margin-left: 0.3rem;
+  }
+}

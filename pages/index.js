@@ -7,18 +7,12 @@ import CONSTANTS from '../utils/constants';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>{CONSTANTS.APP.TITLE}</title>
-        <meta name="description" content={CONSTANTS.APP.DESCRIPTION} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to {CONSTANTS.APP.TITLE}</h1>
+        <h1 className={styles.title}>{CONSTANTS.HOME.HEADING}</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          {CONSTANTS.HOME.SUB_HEADING}
+          <code className={styles.code}><a href='https://github.com/public-apis/public-apis' target="_blank" rel="noreferrer">public-apis</a></code>
         </p>
 
         <SurpriseMe />
