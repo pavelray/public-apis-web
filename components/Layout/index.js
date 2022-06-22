@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Fragment } from 'react';
 import styles from '../../styles/Layout.module.css';
 import CONSTANTS from '../../utils/constants';
+import Footer from '../Footer';
 import Header from '../Header';
 
 export default function Layout({ children }) {
@@ -18,6 +19,7 @@ export default function Layout({ children }) {
         <a href='https://github.com/public-apis/public-apis/issues/3104' target="_blank" rel="noreferrer">[READ THIS ISSUE PLEASE]</a>
       </div>
       <div className={styles.container}>{children}</div>
+      <Footer />
     </Fragment>
   );
 }

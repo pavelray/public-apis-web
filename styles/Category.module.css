@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 90vh;
 }
 
 .title {
@@ -28,7 +29,7 @@
 }
 
 .categorySelect {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   width: 360px;
   padding: 1rem;

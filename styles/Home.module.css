@@ -13,19 +13,40 @@
 }
 
 .footer {
-  display: flex;
-  flex: 1;
+  display: block;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.footer div {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.footer div:not(:last-child) {
+  padding: 0.4rem 0rem;
+}
+
+.footer div:last-child {
+  padding-top: 0.4rem;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  font-weight: 600;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  color: blueviolet;
+}
+
+.footer img:hover {
+  cursor: pointer;
 }
 
 .title a {
@@ -122,4 +143,9 @@
     margin-top: 2rem;
     font-size: 2rem;
   }
+}
+
+.socialIcons img {
+  padding-right: 1rem;
+  margin-right: 2rem;
 }

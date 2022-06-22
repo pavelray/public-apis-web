@@ -15,7 +15,7 @@ export const getData = async (url) => {
 };
 
 export const getLiveData = async (url) => {
-    const response = await axios.get(url);
+    const response = await axios.get(url, { 'Access-Control-Allow-Origin': '*' });
     const data = response.data;
     return data;
 };
