@@ -1,22 +1,29 @@
 import NextImage from 'next/image';
 import NextLink from 'next/link';
+import { useState } from 'react';
 import styles from '../../styles/Header.module.css';
+import MobileMenu from '../MobileMenu/MobileMenu';
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const openMenu = () => setShowMenu(true);
+  const closeMenu = () => setShowMenu(false);
+
   return (
     <header className={styles.header}>
       <NextLink href="/">
         <div className={styles.logo}>
-          <span>Free</span>
+          <span>Public</span>
           <NextImage
             src="/logo.png"
             width={60}
             height={60}
+            className={styles.logoImage}
           />
           <span>Web</span>
         </div>
       </NextLink>
-      <nav>
+      <nav className={styles.desktopMenu}>
         <ul>
           <li>
             <NextLink href="/">Home</NextLink>
@@ -24,11 +31,11 @@ export default function Header() {
           <li>
             <NextLink href="/category">Categories</NextLink>
           </li>
-          <li>
-            <NextLink href="/about">About</NextLink>
-          </li>
         </ul>
       </nav>
+      <div className={styles.mobileMenu}>
+        <MobileMenu openMenu={openMenu} closeMenu={closeMenu} showMenu={showMenu} />
+      </div>
     </header>
   );
 }

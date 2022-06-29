@@ -20,6 +20,8 @@
 }
 
 @media (max-width: 600px) {
+  .banner {
+  }
   .banner a {
     margin-left: 0.3rem;
   }

@@ -9,6 +9,7 @@
   align-items: center;
   border-bottom: 1px solid #eaeaea;
   box-shadow: 0 0 0.15rem 0 rgb(143, 141, 141);
+  justify-content: space-between;
 }
 
 .header li {
@@ -38,4 +39,18 @@
 .logo span {
   padding: 0 0.5rem;
   font-size: 1.5rem;
+}
+
+.mobileMenu {
+  margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+  .desktopMenu {
+    display: none;
+  }
+  .logoImage {
+    width: 30;
+    height: 30;
+  }
 }
